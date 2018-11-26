@@ -4,7 +4,7 @@ import { gql } from 'apollo-server-express';
 // import messageSchema from './message';
 
 import teacherSchema from './teacher';
-import studentSchema from './student';
+// import studentSchema from './student';
 
 
 const linkSchema = gql`
@@ -21,4 +21,5 @@ const linkSchema = gql`
   }
 `;
 
-export default [linkSchema, teacherSchema, studentSchema];
+// export default [linkSchema, teacherSchema, studentSchema];
+export default [linkSchema, teacherSchema];

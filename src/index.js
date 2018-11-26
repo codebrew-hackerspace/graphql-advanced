@@ -8,16 +8,34 @@ import schema from './schema';
 import resolvers from './resolvers';
 import models from './models';
 
+const mongoose = require('mongoose');
+
+const MONGO_URI = 'mongodb://aria:malkani28@ds149593.mlab.com:49593/graphql-advanced';
+
+mongoose.Promise = Promise;
+mongoose.connect(MONGO_URI);
+mongoose.connection
+    .once('open', () => console.log('Connected to MongoLab instance.'))
+    .on('error', error => console.log('Error connecting to MongoLab:', error));
+
+
+
+
 const app = express();
 
 app.use(cors());
+
+const me = {
+  id: "1",
+  name: "Aria",
+}
 
 const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
   context: {
     models,
-    me: models.teachers[1],
+    me
   },
 });
 

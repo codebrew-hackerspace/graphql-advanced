@@ -10,6 +10,6 @@ export default gql`
   type Teacher {
     id: ID!
     name: String!
-    students: [Student!]
+    # students: [Student!]
   }
 `;
