@@ -2,6 +2,6 @@
 
 - [x] Template (schema stitching to split logic)
 - [ ] Mongodb
-- [ ] Authenication
+- [ ] Authentication
 - [ ] Subscriptions
 - [ ] Pagination
