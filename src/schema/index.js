@@ -1,8 +1,4 @@
 import { gql } from 'apollo-server-express';
-
-// import userSchema from './user';
-// import messageSchema from './message';
-
 import teacherSchema from './teacher';
 import studentSchema from './student';
 
