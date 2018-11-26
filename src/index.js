@@ -18,16 +18,13 @@ mongoose.connection
     .once('open', () => console.log('Connected to MongoLab instance.'))
     .on('error', error => console.log('Error connecting to MongoLab:', error));
 
-
-
-
 const app = express();
 
 app.use(cors());
 
 const me = {
   id: "1",
-  name: "Aria",
+  name: "Admin",
 }
 
 const server = new ApolloServer({
