@@ -1,7 +1,7 @@
 # Adavanced graphql features
 
 - [x] Template (schema stitching to split logic)
-- [-] Mongodb
+- [ ] Mongodb
 - [ ] Authenication
 - [ ] Subscriptions
 - [ ] Pagination
