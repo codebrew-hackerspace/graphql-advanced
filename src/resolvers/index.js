@@ -1,4 +1,4 @@
-import userResolvers from '../resolvers/user';
-import messageResolvers from '../resolvers/message';
+import teacherResolvers from '../resolvers/teacher';
+import studentResolver from '../resolvers/student';
 
-export default [userResolvers, messageResolvers];
+export default [teacherResolvers, studentResolver];

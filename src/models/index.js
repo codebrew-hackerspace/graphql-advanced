@@ -1,30 +1,29 @@
-let users = {
+const teachers = {
   1: {
-    id: '1',
-    username: 'Robin Wieruch',
-    messageIds: [1],
+    id: "1",
+    name: "Aria",
   },
   2: {
-    id: '2',
-    username: 'Dave Davids',
-    messageIds: [2],
-  },
+    id: "2",
+    name: "Emily",
+  }
 };
 
-let messages = {
+let students = {
   1: {
-    id: '1',
-    text: 'Hello World',
-    userId: '1',
+    id: "3",
+    name: "Annika",
+    teacherId: "1"
   },
   2: {
-    id: '2',
-    text: 'By World',
-    userId: '2',
-  },
+    id: "4",
+    name: "Cammie",
+    teacherId: "2"
+  }
 };
+
 
 export default {
-  users,
-  messages,
+  teachers,
+  students,
 };
